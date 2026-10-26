@@ -61,7 +61,7 @@ jobs:
       run: |
         git remote add xx https://github.com/backslashxx/KernelSU
         git fetch xx master
-        git checkout xx/master
+        git checkout -f xx/master
 
         curl -sSL https://raw.githubusercontent.com/KOWX712/files/main/KowSU/xxksu.patch | patch -p1
 
